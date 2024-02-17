@@ -1,0 +1,391 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color:#f0f5f4;
+}
+
+.hi1{
+    background-image: url(image/greybg.jpg);
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-color:#f0f5f4;
+
+}
+nav{
+    display:flex;
+    width:84%;
+    margin:auto;
+    padding:20px 0;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+nav ul li{
+   
+    display:inline-block;
+    list-style:none;
+    margin:10px 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:green;
+}
+
+.details{
+    margin-left:8%;
+    margin-top:15%;
+}
+
+.details h1{
+    font-size:60px;
+    color:#30302f;
+    margin-bottom: 20px  ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+span{
+     color:whitesmoke;
+}
+
+.details p{
+    color:#30302f;
+    font-size:24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image{
+    width:45%;
+    height:85%;
+     position:absolute;
+     bottom:0;
+     right:100px; 
+}
+
+.image img{
+    height:100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image .shape{
+    max-width:100%;
+    height:auto;
+}
+.image .me {
+    max-width: 60%;
+    height: auto;
+    position: absolute;
+    padding-bottom: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+section {
+    padding: 160px 15% 120px;
+}
+
+.about {
+    background-color: #d4aa3a;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    align-items: flex-start;
+
+}
+
+.about-text h2 {
+   font-weight: bold;
+    line-height: 1;
+    font-size:60px;
+}
+
+.about-text h4 {
+    font-size: 30px;
+    font-weight: 600;
+    color:#cca808;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: black;;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+
+.about-span{
+    
+    font-weight: bolder;
+   
+    
+}
+
+.skills{
+    background-image: url( "image/bg teal2.jpg");
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text p {
+    color: black;;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2 {
+    font-weight: bold;
+    line-height: 1;
+    font-size:60px;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box {
+    background: linear-gradient(#cca808,#c9c53a);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+    border-color: black;
+}
+
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    margin-bottom: 15px;
+
+}
+
+
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.work {
+    background-image: url("image/grey\ bg.avif");
+    
+    padding: 80px 0; 
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.work .main-text h2{
+    color:white;
+    padding-bottom: 20px;
+}
+
+.work .main-text h2 span {
+    color: #d4aa3a;
+}
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:black; 
+}
+
+.layer p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.layer i {
+    color: #fff; 
+    margin-top: 15px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.1); 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img {
+    transform: scale(1.1);}
+
+.row:hover .layer {
+    height: 100%;}
+
+
+    .contact {
+        background: url("image/nbbg.avif");
+       
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+        padding-bottom: 0;
+    }
+
+
+    
+    .contact-text h4 {
+        color: white;
+        margin: 18px 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .contact-text h2 {
+        font-size: 28px;
+        line-height: 1;
+        color:#d4aa3a;
+    }
+    
+    .contact-text p {
+        color: #d4aa3a;
+        font-size: 20px;;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        
+    }
+    
+    .list {
+        margin-bottom: 2.8rem;
+    
+    }
+    
+    .list li {
+        margin-bottom: 12px;
+    
+    }
+    
+    .list li a {
+        display: block;
+        color: white;
+        font-size: 18px;
+
+        transition: all .45s ease;
+    }
+    
+    .list li a:hover {
+        color: #d4aa3a;
+        transform: translateY(5px);
+    
+    }
+    
+   
+    .contact-form form {
+        position: relative;
+    }
+    
+    .contact-form form input,
+    form textarea {
+        width: 100%;
+        padding: 14px;
+        background: var(--bg-color);
+        color: #d4aa3a;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form textarea {
+        resize: none;
+        height: 240px;
+    }
+    
+    .contact-form .submit {
+        display: inline-block;
+        font-size: 16px;
+        background: var(--main-color);
+        color: #d4aa3a;
+        width: 160px;
+        transition: all .45s ease;
+    }
+    
+    .contact-form .submit:hover {
+        color:pink;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    
+    
+   
+    
